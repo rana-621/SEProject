@@ -113,49 +113,142 @@ align-items: center;
   background-color: #fff2e5;
 }
 #newsletter {
-  text-align: center; /* محاذاة المحتوى في الوسط */
-  padding: 20px; /* تعيين الهوامش الداخلية */
-  background-color: #fefafa; /* لون خلفية الحاوية */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-image: url(Images/banner/b14.png);
+  background-repeat: no-repeat;
+  background-position: 20% 30%;
+  background-color: #041e42;
+  height: 120px;
 }
 
-/* تخصيص النص داخل الحاوية */
-#newsletter .newstext {
-  margin-bottom: 20px; /* هامش أسفل */
+#newsletter h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  margin-left: 50px;
 }
 
-#newsletter .newstext h4 {
-  font-size: 24px; /* حجم العنوان */
-  color: #333; /* لون العنوان */
+#newsletter p {
+  font-size: 14px;
+  font-weight: 600;
+  color: #818ea0;
+  margin-left: 50px;
 }
 
-#newsletter .newstext p {
-  font-size: 16px; /* حجم النص */
-  color: #4e4a4a; /* لون النص */
+#newsletter p span {
+  color: #ffbd27;
 }
 
-#newsletter .newstext span {
-  font-weight: bold; /* تحديد نوع الخط */
-}
-/* تخصيص حقل الإدخال */
-/* تخصيص حقل الإدخال */
-#newsletter .form input[type="text"] {
-  padding: 10px;
-  border: 1px solid #ccc; /* تعيين حدود */
-    border-radius: 5px; /* 
-  display: block; /* جعل حقل الإدخال عنصرًا بلوكيًا ليظهر بشكل كامل العرض */
-  margin: 0 auto 10px; /* تعيين هوامش للتباعد بين النص وحقل الإدخال */
+#newsletter .form {
+  display: flex;
+  width: 40%;
+  height: 100px;
+
 }
 
-/* تخصيص زر الإرسال */
-#newsletter .form button.normal {
-  padding: 10px 20px;
-  background-color: #2741b1; /* لون خلفية الزر */
-  color: white; /* لون النص */
-  border: none; /* إزالة الحدود */
-  border-radius: 5px; /* تعيين نصف قطر الحدود */
-  cursor: pointer; 
-  display: block; /* جعل زر الإرسال عنصرًا بلوكيًا ليظهر بشكل كامل العرض */
-  margin: 0 auto; /* تعيين هامش للتباعد بين النص وزر الإرسال ومحاذاتهما في المنتصف */
+#newsletter input {
+  height: 2.5rem;
+  padding: 0 1.25em;
+  font-size: 14px;
+  width: 75%;
+  margin-top: 25px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+#newsletter button {
+  background-color: #088178;
+  color: #fff;
+  white-space: nowrap;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  
+}
+.normal{
+  background-color: #088178;
+  color: #fff;
+  padding:7px 15px 15px 15px ;
+  border: 5px solid transparent;
+  height: 40px;
+  margin-top: 25px;
+  font-size: 15px;
+}
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .col {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap;
+  justify-content: space-between; */
+  align-items: flex-start;
+  margin-bottom: 20px;
+  margin-top: 90px;
+  margin-right: 40px;
+}
+
+footer .logo {
+  margin-bottom: 30px;
+}
+
+
+footer h4 {
+  font-size: 14px;
+  padding-bottom: 20px;
+  margin-left: 60px;
+}
+
+footer p {
+  font-size: 13px;
+  margin: 0 0 8px 0;
+  margin-left: 60px;
+}
+h3{
+  margin-bottom: 20px;
+}
+footer a {
+  font-size: 13px;
+  text-decoration: none;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+footer .follow {
+  margin-top: 20px;
+  margin-left: 60px;
+}
+
+footer .follow i {
+  color: #465b52;
+  padding-right: 4px;
+  cursor: pointer;
+ 
+}
+
+footer .install .row img {
+  border: 1px solid #088178;
+  border-radius: 6px;
+}
+
+footer .install img{
+  margin: 10px 0 15px 0;
+
+}
+
+footer .follow i:hover,
+footer a:hover{
+  color: #088178;
+}
+footer .copyright{
+  width:100%;
+  text-align: center;
 }
 
 
