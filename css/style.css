@@ -30,14 +30,14 @@ body{
     display: flex;
     justify-content:space-between;
     align-items:center;
-    background-color:  rgb(192, 202, 210);
+    background: #E3E6F3;
     width: 100%;
     height: 70px;
     /* overflow: auto; */
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 30;
+    z-index: 300;
 }
 
 #navbar{
@@ -50,7 +50,7 @@ body{
 }
 #navbar li{
     list-style: none;
-    padding: 0px 30px;
+    padding: 0px 25px;
     position: relative;
 }
 #navbar li a{
@@ -62,7 +62,7 @@ body{
 }
 #navbar li a:hover,
 #navbar li a.active{
-    color: rgb(37, 177, 166);
+    color: #088178;
 }
 #navbar li a.active::after,
 #navbar li a:hover::after{
@@ -152,6 +152,7 @@ position: relative;
     border-radius: 10px;
     font-size: 20px;
     margin-top: 100px;
+    cursor: pointer;
 
 }
 .btn:hover{
@@ -174,13 +175,77 @@ font-size: 16px;
 font-weight: 600;
 margin-bottom: 100px;
 }
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url(Images/banner/b14.png);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+    height: 120px;
+}
 
+#newsletter h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    margin-left: 50px;
+}
+
+#newsletter p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+    margin-left: 50px;
+}
+
+#newsletter p span {
+    color: #ffbd27;
+}
+
+#newsletter .form {
+    display: flex;
+    width: 40%;
+    height: 100px;
+
+}
+
+#newsletter input {
+    height: 2.5rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 75%;
+    margin-top: 25px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsletter button {
+    background-color: #088178;
+    color: #fff;
+    white-space: nowrap;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    
+}
+.normal{
+    background-color: #088178;
+    color: #fff;
+    padding:7px 15px 15px 15px ;
+    border: 5px solid transparent;
+    height: 40px;
+    margin-top: 25px;
+    font-size: 15px;
+}
 footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    background-color: rgb(243, 233, 222);
-
 }
 
 footer .col {
@@ -190,22 +255,28 @@ footer .col {
     justify-content: space-between; */
     align-items: flex-start;
     margin-bottom: 20px;
+    margin-top: 90px;
+    margin-right: 40px;
 }
 
 footer .logo {
     margin-bottom: 30px;
-
 }
 
 
 footer h4 {
     font-size: 14px;
     padding-bottom: 20px;
+    margin-left: 60px;
 }
 
 footer p {
     font-size: 13px;
     margin: 0 0 8px 0;
+    margin-left: 60px;
+}
+h3{
+    margin-bottom: 20px;
 }
 
 footer a {
@@ -217,12 +288,14 @@ footer a {
 
 footer .follow {
     margin-top: 20px;
+    margin-left: 60px;
 }
 
 footer .follow i {
     color: #465b52;
     padding-right: 4px;
     cursor: pointer;
+   
 }
 
 footer .install .row img {
@@ -239,7 +312,6 @@ footer .follow i:hover,
 footer a:hover{
     color: #088178;
 }
-
 footer .copyright{
     width:100%;
     text-align: center;
