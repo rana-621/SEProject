@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shopping</title>
+    <title>cart</title>
     <link href="style.css" rel="stylesheet" />
     <link href="all.css" rel="stylesheet" />
   </head>
@@ -13,28 +13,21 @@
       <div>
           <ul id="navbar">
               <li><a  href="index.html">Home</a></li>
-              <li><a class="active" href="shop.html">Shop</a></li>
+              <li><a   href="shop.html">Shop</a></li>
               <li><a href="blog.html">Blog</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="contact.html">Contact</a></li>
-              <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+              <li><a class="active" href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
           </ul>
       </div>
   </section>
-    <!-- end of the header -->
-    <!--  //////////////////////////////////////////////////////////////// -->
-
-    <!-- page header -->
-    <section id="page-header">
-      <h2>#stayhome</h2>
-      <p>save more with coupons & up to 70% off!</p>
-    </section>
-    <!-- end of img section -->
-    <!-- ///////////////////////////////////////////////////////////////////// -->
-
-    <section id="product1" class="section-p1">
-      <div class="pro-container">
-        <div class="pro" onclick="window.location.href='sproduct.html'">
+  <section id="page-header">
+    <h2>#stayhome</h2>
+    <p>save more with coupons & up to 70% off!</p>
+  </section>
+<section id="product1" class="section-p1">
+    <div class="pro-container">
+        <div class="pro" >
          <img src="products/f1.jpg" />
           <div class="description">
             <span>adidas</span>
@@ -50,18 +43,18 @@
             <h4>$78</h4>
           </div>
           <!--end of product description -->
-          <a href="#"><i class="fa-solid fa-cart-shopping "></i></a>
+          <div class="cartb">
+            <!-- <a href="#" onclick="event"><i class="fa-solid fa-cart-shopping "></i></a>  -->
+          <button class="add_to_cart">Add To Cart</button>
         </div>
-        <!-- end of pro1 -->
-       
-      </div>
-  </section>
+        </div>
+</section>
 
-    <section id="pagination" class="section-p1">
-      
-      <a href="shop.html"><i class="fa-solid fa-arrow-left"></i></a>
-    </section>
-   
+
+ 
+
+    
+  
     <footer class="section-p1">
       <div class="col">
           <img class="logo" src="products/logo.png" alt="">
@@ -111,6 +104,9 @@
           <p>@ 2021, Tech2 etc - HTML CSS Ecommerce Template</p>
       </div>
   </footer>
+
     <script src="script.js"></script>
+    <script src="carts.js"></script>
+
   </body>
 </html>

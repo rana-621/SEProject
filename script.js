@@ -1,4 +1,4 @@
-
+///////////////////////show other products////////////////////////////////
     var mainImg = document.getElementById("minimg");
 var smallImg = document.getElementsByClassName("small-img");
 
@@ -7,7 +7,7 @@ for (var i = 0; i < smallImg.length; i++) {
     mainImg.src = this.src;
   };
 }
-    ///////////////////////////////////////////////
+    ///////////////////save products in array////////////////////////////
     let allproducts=document.querySelector(".pro-container")
 
     let products=[
@@ -20,14 +20,14 @@ for (var i = 0; i < smallImg.length; i++) {
         },
         {
         "id": 2,
-        "name": "Another Product",
+        "name": "White T-Shirt",
         "description": "Description of another product",
         "price": 50,
         "imageUrl": "products/f2.jpg"
         },
         {
             "id": 3,
-            "name": "Another Product",
+            "name": "blue T-Shirt Product",
             "description": "Description of another product",
             "price": 50,
             "imageUrl": "products/f3.jpg"
@@ -128,8 +128,8 @@ for (var i = 0; i < smallImg.length; i++) {
     function drawItems(){
         let y=products.map((item)=>{
             return `
-            <div class="pro" onclick="window.location.href='sproduct.html'" id="pro1">
-            <img src="${item.imageUrl}" />
+            <div class="pro"  id="pro1">
+            <img src="${item.imageUrl}" onclick="window.location.href='sproduct.html'"/>
             <div class="description">
             <span>adidas</span>
             <h5>cartoon astronaut t-shirts</h5>
@@ -142,13 +142,72 @@ for (var i = 0; i < smallImg.length; i++) {
             </div>
             <h4>$78</h4>
             </div>
-            <a href="#"><i class="fa-solid fa-cart-shopping "></i></a>
+            <div class="cartb">
+            <button  class="add_to_cart" onClick=addToCart(${item.id})> Add To Cart</button>
+            </div>
         </div>
             `
         })
         allproducts.innerHTML=y;
     }
+
     drawItems()
+    /////////////////////////////////////////////////////////////////
+    let badge=document.querySelector(".badges")
+    let cartProductDiv=document.querySelector(".carts_products div")
 
 
+    //////////////////////////////////////////////////////////////////
+    let idcart=document.querySelector("#product1")
+    let getidcart=localStorage.getItem("name",idcart.value)
+    // let addedItem=[];
+    let addedItem=localStorage.getItem("productsincart") ?JSON.parse(localStorage.getItem("productsincart")):[];
 
+    if(addedItem){
+        addedItem.map(item=>{
+            cartProductDiv.innerHTML+=`<p> ${item.name}</p>`
+        })
+        badge.style.display="block"
+        badge.innerHTML=addedItem.length
+        }
+
+         if(localStorage.getItem=("idcart")){
+            function addToCart(id) {
+                let choosenItem=products.find((item)=>item.id===id)
+                cartProductDiv.innerHTML+=`<p> ${choosenItem.name}</p>`;
+                addedItem=[...addedItem,choosenItem]
+                localStorage.setItem("productsincart", JSON.stringify(addedItem))
+                let cartproductlength=document.querySelectorAll(".carts_products div p")
+                // console.log(cartproductlength.length)
+                badge.style.display="block"
+                badge.innerHTML=cartproductlength.length     
+            }
+         }else{
+            window.location="shop.html" 
+         }
+      
+//    ///////////////////////////////////////////////////////////
+    let shoppingCartIcon=document.querySelector("#shopping_cart")
+    let cartProducts=document.querySelector(".carts_products")
+    shoppingCartIcon.addEventListener('click',opencart)
+
+    function opencart(){
+        if(cartProductDiv.innerHTML!=""){
+            if( cartProducts.style.display=="block"){
+                cartProducts.style.display="none"
+            }else{
+                cartProducts.style.display="block"
+            }
+        }
+    }
+    /////////////////////remove from cart////////////////////////////////////////
+  
+    //   let removedItem=[];
+//     function removeFromCart(id) {
+//   let temp=removedItem.filter(item=>item.id!=id)
+//   localStorage.setItem("productsincart", JSON.stringify(temp))
+
+//     }
+//     removeFromCart()
+
+  

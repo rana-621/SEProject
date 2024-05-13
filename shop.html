@@ -17,7 +17,15 @@
               <li><a href="blog.html">Blog</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="contact.html">Contact</a></li>
-              <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+              <li id="shopping_cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                 <span class="badges"></span>
+                 <div class="carts_products">
+                  <div ></div>
+                  <a href="cart.html">View All Products</a>
+                 </div>
+                 
+                </li>
           </ul>
       </div>
   </section>
@@ -34,7 +42,7 @@
 
     <section id="product1" class="section-p1">
       <div class="pro-container">
-        <div class="pro" onclick="window.location.href='sproduct.html'">
+        <div class="pro" >
          <img src="products/f1.jpg" />
           <div class="description">
             <span>adidas</span>
@@ -50,7 +58,10 @@
             <h4>$78</h4>
           </div>
           <!--end of product description -->
-          <a href="#"><i class="fa-solid fa-cart-shopping "></i></a>
+          <div class="cartb">
+            <!-- <a href="#" onclick="event"><i class="fa-solid fa-cart-shopping "></i></a>  -->
+          <button class="add_to_cart">Add To Cart</button>
+        </div>
         </div>
         <!-- end of pro1 -->
        
@@ -62,6 +73,8 @@
       <a href="second_shop.html">2</a>
       <a href="#"><i class="fa-solid fa-right-long"></i></a>
     </section>
+    
+  </section>
     <footer class="section-p1">
       <div class="col">
           <img class="logo" src="products/logo.png" alt="">
@@ -112,5 +125,7 @@
       </div>
   </footer>
     <script src="script.js"></script>
+    <script src="carts.js"></script>
+
   </body>
 </html>
