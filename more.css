@@ -1,0 +1,286 @@
+/* CSS styles to style HTML elements */
+
+/* Reset default margin and padding */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+   }
+  
+.cust{
+  text-align: center;
+  font-weight: bolder;
+  color: #b47b12;
+}
+.head{
+  color:white;
+}
+/* Style header */
+header {
+   padding: 50px;
+  text-align: center;
+  text-decoration: white;
+  background-image: linear-gradient(to right,rgb(124, 84, 124),rgb(176, 115, 125) );
+  background-blend-mode: overlay;
+   /*background-color:rgb(124, 84, 124);*/
+ /* background-image: url("shop.jpeg");*/
+ /* background-repeat: no-repeat; *//* لمنع تكرار الصورة */
+   /* background-size: cover;*/
+     /* لتحجيم الصورة لتملأ المساحة */
+   /* background-position: center;*/ /* لوضع الصورة في الوسط */
+    
+}
+
+/* Style company information section */
+#company-info {
+  border-radius: 5%;
+  margin-top: 20px;
+  margin-left: 300px;
+  height: 400px;
+  width: 700px;
+  background-image: linear-gradient(to right,rgb(67, 9, 29),rgb(108, 56, 107) );
+  background-blend-mode: overlay;
+  padding: 25px;
+  text-align: center;
+  color: white;
+  flex: 0 0 300px;
+}
+
+/* Style team section */
+
+.team-section {
+  padding: 50px 0;
+  text-align: center;
+}
+.team-section h2{
+  margin-bottom: 50px;
+  text-align: center;
+  color: #2d585a;
+}
+.team-member {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 20px;
+}
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  margin-right: 200px;
+}
+.team-member h3 {
+  margin-top: 20px;
+  margin-right: 100px;
+  font-size: 24px;
+  color: #333;
+}
+.team-member p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #666;
+  margin-right: 50px;
+}
+.team-member a {
+  color: rgb(77, 58, 127);
+  text-decoration: underline;
+  margin-top: 100px;
+}
+
+.team-member a:hover {
+  text-decoration:underline;
+}
+
+
+
+/* Style brands section */
+#brands {
+  text-align: center;
+  padding: 20px;
+  color: #302f2b;
+  background-color: rgb(243, 237, 230);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Style images in the brands section */
+#brands img {
+  width: 210px; /* Adjust as needed */
+  margin: 35px;
+}
+#quality {
+  background-image: linear-gradient(to right,rgb(194, 163, 128),rgb(136, 133, 108) );
+  background-blend-mode: overlay;
+  width: 800px;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  text-decoration: white;
+  margin-left: 630px;
+}
+
+/* تنسيق عنوان القسم */
+#quality h2 {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* تنسيق العلامات التجارية */
+.brand-info, .brand-list {
+  margin-bottom: 20px;
+}
+
+.brand-info h3, .brand-list h3 {
+  color:white;
+  font-size: 20px;
+}
+
+.brand-info p {
+  color:white;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.brand-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.brand-list ul li {
+  color: white;
+  font-size:18px;
+}
+.instructions-section {
+  background-image: linear-gradient(to right,rgb(134, 138, 181),rgb(12, 54, 162) );
+  background-blend-mode: overlay;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 700px;
+}
+
+.instructions-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #c4cdcb;
+}
+
+.instruction {
+  margin-bottom: 10px;
+}
+
+
+
+#contact {
+  margin-left: 450px;
+  margin-bottom: 80px;
+  margin-top: 80px;
+  text-align: center;
+  background-color: #d7e2e5;
+  height: 300px;
+  width: 600px;
+  border-radius: 5%;
+ 
+}
+
+.contact-info {
+  margin-top: 20px;
+}
+
+.contact-info a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-info a:hover {
+  background-color: #1e9f9f;
+}
+
+.contact-info a i {
+  margin-right: 10px;
+}
+/* تخصيص الأيقونات */
+.contact-info a i {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  vertical-align:middle;
+}
+
+#cust {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-left: 40px;
+  /* Add any additional styling you want */
+}
+
+.customer-review {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 20px;
+  height: 150px;
+  width: 600px;
+  border-radius: 50%;
+  background-color: #f0ede7;
+  border-color: #b47b12;
+  margin-left: 30px;
+ 
+}
+.customer-review p{
+ color: #9a2b2b;
+ margin-top:10px ;
+ 
+}
+.h1{
+  color: #272323;
+  text-align: center;
+  font-weight: bold;
+ }
+.customer-info {
+  display: flex;
+  align-items: center;
+}
+
+.customer-info img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  margin-right: 20px;
+  
+}
+
+.customer-info h3 {
+  font-weight: bold;
+  margin: 0;
+}
+
+.rating {
+  margin-top: 10px;
+  margin-left: 200px;
+}
+
+.star {
+  font-size: 20px;
+  color: #ccc;
+  cursor: pointer; /* لون النجوم الممتلئة */
+}
+.star:hover{
+  color: #ffcc00;
+}
+.star.active{
+  color: #ffcc00;
+}
+.star:hover,
+.star:active{
+  color: #ffcc00;
+}
+
