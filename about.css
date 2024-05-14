@@ -1,3 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Spartan", sans-serif;
+}
+/* #page-header{
+    background-image: url(images/photo1713622444.jpeg);
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+} */
+body{
+  position: relative;
+}
+/* Header */
+#header{
+  justify-content:space-between;
+  align-items:center;
+  background: #E3E6F3;
+  width: 100%;
+  height: 85px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 333;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.06);
+}
+
+#navbar{
+  display: flex;
+  align-items:center;
+  justify-content: flex-end;
+  padding: 0px 100px;
+}
+#navbar li{
+  list-style: none;
+  padding: 15px 25px;
+  position: relative;
+}
+#navbar li a{
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+  transition: 0.3 ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active{
+  color: #088178;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+  content: "";
+  width: 30%;
+  height: 2px;
+  background: rgb(37, 177, 166);
+  position: absolute;
+  bottom: -4px;
+  left:20px
+}
+#page-header.blog-header{
+  width: 100%;
+  height: 45vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #088178;
+}
+.logo{
+  margin-left: 70px;
+}
+#blog{
+  padding: 150px 150px 0px 150px;
+
+}
+#blog .blog-box{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  padding-bottom: 80px;
+}
+#blog .blog-img{
+  width: 50%;
+  margin-right: 40px;
+}
+#blog img{
+  width:90% ;
+  height: 350px;
+  object-fit: cover;
+  }
+
 
 
 
@@ -41,6 +144,7 @@ align-items: center;
 #about-head img{
   width: 50%;
   height: auto;
+  margin-top: 100px;
 }
 #about-head div{
  padding-left: 40px;
@@ -53,6 +157,7 @@ align-items: center;
   width: 70%;
   height: 100%;
   margin: 30px auto 0 auto;
+  background-color: #3b3737;
 }
 #about-app .video video{
   width: 100%;

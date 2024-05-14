@@ -31,6 +31,10 @@ reviews.forEach((review) => {
         stars.forEach((s, i) => {
           s.classList.remove('hover');
         });
-      });
-    });
+   });
   });
+  });
+  window.addEventListener('resize', () => {
+    adjustLayout();
+});
+
